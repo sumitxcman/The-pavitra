@@ -5,7 +5,6 @@ import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { AboutSection } from '@/components/AboutSection';
 import { DiningPerksBanner } from '@/components/DiningPerksBanner';
-import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { SignatureDishes } from '@/components/SignatureDishes';
 import { MenuSection } from '@/components/MenuSection';
 import { GallerySection } from '@/components/GallerySection';
@@ -45,37 +44,34 @@ export default function Home() {
       {/* 3. Dining Perks Banner */}
       <DiningPerksBanner />
 
-      {/* 4. Why Choose Us */}
-      <WhyChooseUs />
-
-      {/* 5. Signature Dishes */}
+      {/* 4. Signature Dishes */}
       <SignatureDishes />
 
-      {/* 6. Complete Interactive Menu */}
+      {/* 5. Complete Interactive Menu */}
       <MenuSection />
 
-      {/* 7. Gallery & Lightbox */}
+      {/* 6. Gallery & Lightbox */}
       <GallerySection />
 
-      {/* 8. Private Dining & Celebrations */}
+      {/* 7. Private Dining & Celebrations */}
       <CelebrationsSection />
 
-      {/* 9. Reservation Form & WhatsApp Booking */}
+      {/* 8. Online Table Reservation */}
       <ReservationSection />
+
+      {/* 9. Verified Google Reviews */}
+      <GoogleReviewsSection />
 
       {/* 10. Frequently Asked Questions */}
       <FAQSection />
 
-      {/* 11. Google Reviews & Social Proof */}
-      <GoogleReviewsSection />
-
-      {/* 12. Contact Details & Interactive Map */}
+      {/* 11. Location & Contact Section */}
       <ContactSection />
 
-      {/* 13. Light Gold Footer */}
+      {/* 12. Footer */}
       <Footer />
 
-      {/* 14. Floating Action Button */}
+      {/* Floating WhatsApp Action Button */}
       <FloatingWhatsApp />
 
     </main>
