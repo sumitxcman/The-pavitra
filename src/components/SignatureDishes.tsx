@@ -10,8 +10,8 @@ export const SignatureDishes: React.FC = () => {
     'Dal Makhani',
     'Corn Cheese Pizza',
     'Paneer Butter Masala',
-    'Paneer Tikka',
-    'Tandoori Grill Platter',
+    'Special Veg Dum Biryani',
+    'Pavitra Sunset Special Mocktail',
   ];
 
   const signatureItems = MENU_ITEMS.filter((item) => signatureNames.includes(item.name))
