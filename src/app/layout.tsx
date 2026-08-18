@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://thepavitra.com'),
   title: 'The Pavitra – Pure Veg Restaurant | Premium Vegetarian Dining in Rohini',
   description:
     'Experience premium pure vegetarian dining at The Pavitra, Metro Walk Mall, Rohini. Enjoy delicious Indian cuisine, elegant pink hall ambience, family dining and warm hospitality.',
