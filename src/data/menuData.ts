@@ -84,7 +84,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Paneer Specialities',
     price: 360,
     description: 'Tender cottage cheese cubes simmered in a creamy, velvety tomato and butter gravy.',
-    image: '/images/server-bowls.png',
+    image: '/images/north-indian-feast.png',
     isVegetarian: true,
     isChefSpecial: true,
     isPopular: true,
