@@ -31,12 +31,12 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#050507] text-[#FFFFFF] relative">
+    <main className="min-h-screen bg-[#FAF9F6] text-[#111113] relative">
       
       {/* Sticky Header Navigation */}
       <Navbar onOpenReservation={handleScrollToReservation} />
 
-      {/* 1. Hero Section with Top Photo Collage */}
+      {/* 1. Hero Section */}
       <Hero />
 
       {/* 2. About Section */}
@@ -72,7 +72,7 @@ export default function Home() {
       {/* 12. Contact Details & Interactive Map */}
       <ContactSection />
 
-      {/* 13. Dark Luxury Footer */}
+      {/* 13. Light Gold Footer */}
       <Footer />
 
       {/* 14. Floating Action Button */}

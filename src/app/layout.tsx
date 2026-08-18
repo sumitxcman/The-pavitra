@@ -50,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased bg-[#050507] text-[#FFFFFF] font-sans selection:bg-[#D4AF37] selection:text-[#050507]">
+      <body className="antialiased bg-[#FAF9F6] text-[#111113] font-sans selection:bg-[#D4AF37] selection:text-[#FFFFFF]">
         {children}
       </body>
     </html>

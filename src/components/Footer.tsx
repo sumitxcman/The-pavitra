@@ -28,27 +28,27 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#0A0A0C] text-[#FFFFFF] border-t border-[#D4AF37]/30 pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-[#FAF9F6] text-[#111113] border-t border-[#D4AF37]/40 pt-16 pb-8 relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-10 border-b border-[#141417]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-10 border-b border-[#E5C158]/30">
           
           {/* Brand Identity */}
           <div className="lg:col-span-5 space-y-4">
             <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="inline-block group">
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-[#FFFFFF] group-hover:text-[#D4AF37] transition-colors">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-[#111113] group-hover:text-[#B38F24] transition-colors">
                 THE PAVITRA
               </h3>
-              <p className="text-xs tracking-[0.25em] text-[#D4AF37] uppercase font-sans font-semibold">
+              <p className="text-xs tracking-[0.25em] text-[#B38F24] uppercase font-sans font-bold">
                 PURE VEG RESTAURANT
               </p>
             </a>
 
-            <p className="text-xs sm:text-sm text-[#F4EFE6]/80 leading-relaxed font-sans font-light max-w-md">
+            <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed font-sans font-light max-w-md">
               Metro Walk Mall, Rohini's signature pure vegetarian restaurant. Prepared with tradition, served with warmth.
             </p>
 
-            <div className="inline-flex items-center space-x-2 px-3 py-1 bg-[#141417] rounded-full border border-[#D4AF37]/30 text-[11px] text-[#D4AF37]">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 bg-[#FFFFFF] rounded-full border border-[#D4AF37] text-[11px] text-[#B38F24] shadow-sm">
               <ShieldCheck className="w-3.5 h-3.5 text-[#D4AF37]" />
               <span>100% Certified Pure Vegetarian Kitchen</span>
             </div>
@@ -56,14 +56,14 @@ export const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-serif font-bold text-sm uppercase tracking-wider text-[#D4AF37]">Quick Navigation</h4>
+            <h4 className="font-serif font-bold text-sm uppercase tracking-wider text-[#B38F24]">Quick Navigation</h4>
             <ul className="space-y-2 text-xs font-sans">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-[#F4EFE6]/80 hover:text-[#D4AF37] transition-colors flex items-center"
+                    className="text-[#52525B] hover:text-[#B38F24] transition-colors flex items-center font-medium"
                   >
                     <span className="text-[#D4AF37] mr-1.5">›</span>
                     <span>{link.name}</span>
@@ -75,18 +75,18 @@ export const Footer: React.FC = () => {
 
           {/* Location & Hours */}
           <div className="lg:col-span-4 space-y-3">
-            <h4 className="font-serif font-bold text-sm uppercase tracking-wider text-[#D4AF37]">Visit Us</h4>
-            <ul className="space-y-3 text-xs text-[#F4EFE6]/80 font-sans font-light">
+            <h4 className="font-serif font-bold text-sm uppercase tracking-wider text-[#B38F24]">Visit Us</h4>
+            <ul className="space-y-3 text-xs text-[#52525B] font-sans font-light">
               <li className="flex items-start space-x-2.5">
-                <MapPin className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#B38F24] shrink-0 mt-0.5" />
                 <span>Metro Walk Mall, GA-14, Sector 10, Rohini, Delhi – 110085</span>
               </li>
               <li className="flex items-center space-x-2.5">
-                <Phone className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                <a href="tel:+918700087329" className="hover:text-[#D4AF37] font-semibold text-[#FFFFFF]">087000 87329</a>
+                <Phone className="w-4 h-4 text-[#B38F24] shrink-0" />
+                <a href="tel:+918700087329" className="hover:text-[#B38F24] font-bold text-[#111113]">087000 87329</a>
               </li>
               <li className="flex items-center space-x-2.5">
-                <Clock className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                <Clock className="w-4 h-4 text-[#B38F24] shrink-0" />
                 <span>11:00 AM – 11:00 PM (Mon – Sun)</span>
               </li>
             </ul>
@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Copyright */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#F4EFE6]/60 font-sans font-light gap-2 text-center sm:text-left">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#71717A] font-sans font-light gap-2 text-center sm:text-left">
           <p>© 2026 The Pavitra – Pure Veg Restaurant. All Rights Reserved.</p>
           <p>Metro Walk Mall, Sector 10, Rohini, Delhi</p>
         </div>

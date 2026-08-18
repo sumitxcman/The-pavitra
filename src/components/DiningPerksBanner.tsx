@@ -28,7 +28,7 @@ export const DiningPerksBanner: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#121215] border-y border-[#D4AF37]/30 py-10 text-[#FFFFFF] relative overflow-hidden">
+    <section className="bg-[#F5F3EF] border-y border-[#D4AF37]/30 py-10 text-[#111113] relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {perks.map((perk, idx) => {
@@ -36,16 +36,16 @@ export const DiningPerksBanner: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="flex items-start space-x-4 p-4 rounded-xl bg-[#050507] border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all duration-300 shadow-md group"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-[#FFFFFF] border border-[#D4AF37]/40 hover:border-[#D4AF37] transition-all duration-300 shadow-md group"
               >
-                <div className="p-3 rounded-lg bg-[#141417] border border-[#D4AF37]/40 text-[#D4AF37] group-hover:scale-110 transition-transform duration-300 shrink-0">
+                <div className="p-3 rounded-lg bg-[#FAF9F6] border border-[#D4AF37]/40 text-[#B38F24] group-hover:scale-110 transition-transform duration-300 shrink-0">
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-sm text-[#FFFFFF] group-hover:text-[#D4AF37] transition-colors">
+                  <h3 className="font-serif font-bold text-sm text-[#111113] group-hover:text-[#B38F24] transition-colors">
                     {perk.title}
                   </h3>
-                  <p className="text-xs text-[#F4EFE6]/80 font-sans font-light mt-1 leading-relaxed">
+                  <p className="text-xs text-[#52525B] font-sans font-light mt-1 leading-relaxed">
                     {perk.desc}
                   </p>
                 </div>
