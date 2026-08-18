@@ -44,35 +44,27 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 text-center text-[#FFFFFF] w-full flex flex-col items-center">
         
-        {/* TOP MOBILE FEATURED PHOTO COLLAGE CARD (MOBILE PHONE VIEW ONLY) */}
+        {/* TOP MOBILE SINGLE BIG FEATURED PHOTO CARD (MOBILE PHONE VIEW ONLY) */}
         <div className="w-full max-w-xl mx-auto mb-6 sm:mb-8 relative z-20 block lg:hidden">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#D4AF37] bg-[#121215] p-1">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#D4AF37] bg-[#121215] p-1.5">
             
-            {/* Storefront Entrance Main Image */}
-            <div className="relative h-56 sm:h-72 rounded-xl overflow-hidden">
+            {/* Storefront Entrance Single Big Image */}
+            <div className="relative h-64 sm:h-80 rounded-xl overflow-hidden">
               <img
                 src="/images/pavitra-entrance.png"
                 alt="The Pavitra Gold Glowing Storefront Entrance"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050507]/90 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050507]/95 via-transparent to-transparent" />
               
               {/* Quote text overlay */}
-              <div className="absolute bottom-3 left-3 right-3 text-left">
-                <p className="font-serif italic text-xs sm:text-sm text-[#F4EFE6] drop-shadow-md">
+              <div className="absolute bottom-3.5 left-4 right-4 text-left">
+                <p className="font-serif italic text-xs sm:text-sm text-[#F4EFE6] drop-shadow-lg font-medium">
                   "Purity in every ingredient, perfection on every platter."
                 </p>
               </div>
             </div>
 
-            {/* Overlapping Pink Lounge Photo */}
-            <div className="absolute -bottom-3 -right-3 w-36 sm:w-48 rounded-xl overflow-hidden border-2 border-[#D4AF37] shadow-2xl">
-              <img
-                src="/images/pink-hall-wide.png"
-                alt="Pink Dining Lounge at The Pavitra"
-                className="w-full h-24 sm:h-32 object-cover"
-              />
-            </div>
           </div>
         </div>
 
