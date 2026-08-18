@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
             </p>
 
             <div className="inline-flex items-center space-x-2 px-3 py-1 bg-[#141417] rounded-full border border-[#D4AF37]/30 text-[11px] text-[#D4AF37]">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#D4AF37]" />
               <span>100% Certified Pure Vegetarian Kitchen</span>
             </div>
           </div>

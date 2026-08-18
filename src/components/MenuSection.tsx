@@ -98,7 +98,7 @@ export const MenuSection: React.FC = () => {
 
                   {/* 100% Pure Veg Badge */}
                   <div className="absolute top-3 left-3 bg-[#0A0A0C]/90 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-[#D4AF37]/40 flex items-center space-x-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
                     <span className="text-[9px] font-semibold text-[#D4AF37]">PURE VEG</span>
                   </div>
                 </div>

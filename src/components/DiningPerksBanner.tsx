@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ShieldCheck, Award, HeartHandshake, Sparkles, Clock, MapPin } from 'lucide-react';
+import { ShieldCheck, Award, HeartHandshake, Sparkles } from 'lucide-react';
 
 export const DiningPerksBanner: React.FC = () => {
   const perks = [
@@ -28,24 +28,24 @@ export const DiningPerksBanner: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#12372A] border-y border-[#D4AF37]/40 py-12 text-[#F8F3E7] relative overflow-hidden">
+    <section className="bg-[#121215] border-y border-[#D4AF37]/30 py-10 text-[#FFFFFF] relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {perks.map((perk, idx) => {
             const Icon = perk.icon;
             return (
               <div
                 key={idx}
-                className="flex items-start space-x-4 p-4 rounded-xl bg-[#0B241B]/60 border border-[#D4AF37]/20 hover:border-[#D4AF37] transition-all duration-300 shadow-md group"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-[#050507] border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all duration-300 shadow-md group"
               >
-                <div className="p-3 rounded-lg bg-[#12372A] border border-[#D4AF37]/40 text-[#D4AF37] group-hover:scale-110 transition-transform duration-300 shrink-0">
-                  <Icon className="w-6 h-6" />
+                <div className="p-3 rounded-lg bg-[#141417] border border-[#D4AF37]/40 text-[#D4AF37] group-hover:scale-110 transition-transform duration-300 shrink-0">
+                  <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-base text-[#F8F3E7] group-hover:text-[#D4AF37] transition-colors">
+                  <h3 className="font-serif font-bold text-sm text-[#FFFFFF] group-hover:text-[#D4AF37] transition-colors">
                     {perk.title}
                   </h3>
-                  <p className="text-xs text-[#E9DFC8]/80 font-sans font-light mt-1 leading-relaxed">
+                  <p className="text-xs text-[#F4EFE6]/80 font-sans font-light mt-1 leading-relaxed">
                     {perk.desc}
                   </p>
                 </div>

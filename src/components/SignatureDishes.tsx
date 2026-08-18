@@ -64,7 +64,7 @@ export const SignatureDishes: React.FC = () => {
 
                 {/* 100% Veg Badge */}
                 <div className="absolute top-3 left-3 bg-[#0A0A0C]/90 backdrop-blur-md px-3 py-1 rounded-full border border-[#D4AF37]/50 flex items-center space-x-1.5 text-xs text-[#FFFFFF]">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                  <span className="w-2 h-2 rounded-full bg-[#D4AF37]" />
                   <span className="font-semibold text-[9px] tracking-wider uppercase text-[#D4AF37]">
                     100% PURE VEG
                   </span>

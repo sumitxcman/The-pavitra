@@ -4,76 +4,46 @@ import React, { useState } from 'react';
 import { GALLERY_ITEMS } from '@/data/galleryData';
 import { GalleryItem } from '@/types';
 import { Lightbox } from './Lightbox';
-import { Maximize2, Sparkles } from 'lucide-react';
+import { Eye, Sparkles } from 'lucide-react';
 
 export const GallerySection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
-  const [selectedItemIndex, setSelectedItemIndex] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
-  const categories = ['All', 'Food', 'Ambience', 'Dining', 'Events', 'Special Occasions'];
+  const categories = ['All', 'Food', 'Ambience', 'Dining', 'Special Occasions'];
 
   const filteredItems = GALLERY_ITEMS.filter(
     (item) => activeCategory === 'All' || item.category === activeCategory
   );
 
-  const handleOpenLightbox = (index: number) => {
-    setSelectedItemIndex(index);
-  };
-
-  const handleCloseLightbox = () => {
-    setSelectedItemIndex(null);
-  };
-
-  const handlePrev = () => {
-    if (selectedItemIndex === null) return;
-    setSelectedItemIndex((prev) =>
-      prev === 0 ? filteredItems.length - 1 : (prev as number) - 1
-    );
-  };
-
-  const handleNext = () => {
-    if (selectedItemIndex === null) return;
-    setSelectedItemIndex((prev) =>
-      prev === filteredItems.length - 1 ? 0 : (prev as number) + 1
-    );
-  };
-
-  const currentItem =
-    selectedItemIndex !== null && filteredItems[selectedItemIndex]
-      ? filteredItems[selectedItemIndex]
-      : null;
-
   return (
-    <section id="gallery" className="py-24 bg-[#F8F3E7] text-[#0B241B] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="gallery" className="py-20 sm:py-24 bg-[#050507] text-[#FFFFFF] relative border-t border-[#D4AF37]/20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         
         {/* Header */}
-        <div className="text-center mb-12">
-          <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D4AF37] bg-[#12372A] px-4 py-1.5 rounded-full inline-block mb-3">
-            VISUAL EXPERIENCE
+        <div className="text-center mb-10">
+          <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] font-semibold text-[#D4AF37] bg-[#121215] px-4 py-1.5 rounded-full border border-[#D4AF37]/30 inline-block mb-3">
+            PHOTO GALLERY
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#12372A] tracking-tight">
-            Our Gallery & Atmosphere
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] tracking-tight">
+            The Pavitra Experience
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-[#0B241B]/75 max-w-xl mx-auto font-sans font-light">
-            Take a visual tour of our culinary art, refined interiors, and joyful moments at The Pavitra.
+          <p className="mt-2 text-sm sm:text-base text-[#F4EFE6]/80 max-w-md mx-auto font-sans font-light">
+            Real food platters, pink marble dining hall, and memorable event moments.
           </p>
-          <div className="w-24 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full" />
+          <div className="w-20 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+        <div className="flex items-center justify-start sm:justify-center overflow-x-auto space-x-2 pb-4 mb-10 no-scrollbar">
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => {
-                setActiveCategory(cat);
-                setSelectedItemIndex(null);
-              }}
-              className={`px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
+              onClick={() => setActiveCategory(cat)}
+              className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 ${
                 activeCategory === cat
-                  ? 'bg-[#12372A] text-[#D4AF37] border border-[#D4AF37] shadow-md scale-105'
-                  : 'bg-[#FFFFFF] text-[#0B241B]/80 hover:bg-[#E9DFC8] border border-[#E9DFC8]'
+                  ? 'bg-gradient-to-r from-[#D4AF37] to-[#E5C158] text-[#050507] shadow-lg scale-105'
+                  : 'bg-[#121215] text-[#FFFFFF] hover:text-[#D4AF37] border border-[#D4AF37]/20'
               }`}
             >
               {cat}
@@ -81,29 +51,30 @@ export const GallerySection: React.FC = () => {
           ))}
         </div>
 
-        {/* Masonry-Style Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredItems.map((item, index) => (
+        {/* Masonry Image Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {filteredItems.map((item) => (
             <div
               key={item.id}
-              onClick={() => handleOpenLightbox(index)}
-              className="group relative rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 bg-[#0B241B] h-72 border border-[#E9DFC8]"
+              onClick={() => setSelectedImage(item)}
+              className="group relative rounded-xl overflow-hidden cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 bg-[#121215] h-72 border border-[#D4AF37]/30 hover:border-[#D4AF37]"
             >
               <img
                 src={item.imageUrl}
                 alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-95"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B241B]/90 via-[#0B241B]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <span className="text-[10px] uppercase tracking-widest text-[#D4AF37] font-semibold mb-1">
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050507]/90 via-[#050507]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                <span className="text-[10px] uppercase font-bold tracking-widest text-[#D4AF37]">
                   {item.category}
                 </span>
-                <h3 className="font-serif text-lg font-bold text-[#F8F3E7] leading-snug">
+                <h3 className="font-serif text-base font-bold text-[#FFFFFF] mt-1">
                   {item.title}
                 </h3>
-                <div className="mt-3 inline-flex items-center text-xs text-[#D4AF37] font-semibold uppercase tracking-wider">
-                  <Maximize2 className="w-4 h-4 mr-1.5" />
-                  <span>Click to Expand</span>
+                <div className="mt-3 flex items-center text-xs font-semibold text-[#D4AF37]">
+                  <Eye className="w-4 h-4 mr-1" />
+                  <span>Click to expand</span>
                 </div>
               </div>
             </div>
@@ -112,13 +83,10 @@ export const GallerySection: React.FC = () => {
 
       </div>
 
-      {/* Lightbox Component */}
-      <Lightbox
-        item={currentItem}
-        onClose={handleCloseLightbox}
-        onPrev={handlePrev}
-        onNext={handleNext}
-      />
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <Lightbox item={selectedImage} onClose={() => setSelectedImage(null)} />
+      )}
     </section>
   );
 };

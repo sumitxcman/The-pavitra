@@ -21,7 +21,7 @@ export default function Home() {
   const handleScrollToReservation = () => {
     const resEl = document.querySelector('#reservations');
     if (resEl) {
-      const navHeight = 90;
+      const navHeight = 70;
       const elementPosition = resEl.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: elementPosition - navHeight,
@@ -31,12 +31,12 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0B241B] text-[#F8F3E7] relative">
+    <main className="min-h-screen bg-[#050507] text-[#FFFFFF] relative">
       
       {/* Sticky Header Navigation */}
       <Navbar onOpenReservation={handleScrollToReservation} />
 
-      {/* 1. Hero Section */}
+      {/* 1. Hero Section with Top Photo Collage */}
       <Hero />
 
       {/* 2. About Section */}

@@ -43,22 +43,22 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-[#0B241B] text-[#F8F3E7] relative overflow-hidden border-t border-[#D4AF37]/30">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+    <section className="py-20 sm:py-24 bg-[#050507] text-[#FFFFFF] relative overflow-hidden border-t border-[#D4AF37]/20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D4AF37] bg-[#12372A] px-4 py-1.5 rounded-full inline-flex items-center space-x-2 mb-3">
+        <div className="text-center mb-12 sm:mb-16">
+          <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] font-semibold text-[#D4AF37] bg-[#121215] px-4 py-1.5 rounded-full border border-[#D4AF37]/30 inline-flex items-center space-x-2 mb-3">
             <HelpCircle className="w-3.5 h-3.5 mr-1" />
             <span>GUEST INFORMATION</span>
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#F8F3E7] tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="mt-3 text-base text-[#E9DFC8]/80 max-w-xl mx-auto font-sans font-light">
+          <p className="mt-2 text-sm sm:text-base text-[#F4EFE6]/80 max-w-md mx-auto font-sans font-light">
             Everything you need to know about dining at Rohini's favourite pure vegetarian destination.
           </p>
-          <div className="w-24 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full" />
+          <div className="w-20 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Accordion FAQ Grid */}
@@ -70,28 +70,28 @@ export const FAQSection: React.FC = () => {
                 key={index}
                 className={`rounded-xl border transition-all duration-300 overflow-hidden ${
                   isOpen
-                    ? 'bg-[#12372A] border-[#D4AF37] shadow-xl'
-                    : 'bg-[#12372A]/40 border-[#D4AF37]/20 hover:border-[#D4AF37]/50'
+                    ? 'bg-[#121215] border-[#D4AF37] shadow-xl'
+                    : 'bg-[#121215]/50 border-[#D4AF37]/20 hover:border-[#D4AF37]/50'
                 }`}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full p-6 text-left flex items-center justify-between space-x-4 focus:outline-none"
+                  className="w-full p-5 sm:p-6 text-left flex items-center justify-between space-x-4 focus:outline-none"
                 >
-                  <span className="font-serif font-bold text-lg sm:text-xl text-[#F8F3E7]">
+                  <span className="font-serif font-bold text-base sm:text-lg text-[#FFFFFF]">
                     {faq.question}
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-full border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 bg-[#D4AF37] text-[#0B241B]' : 'bg-[#0B241B]'
+                    className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0 transition-transform duration-300 ${
+                      isOpen ? 'rotate-180 bg-[#D4AF37] text-[#050507]' : 'bg-[#050507]'
                     }`}
                   >
-                    <ChevronDown className="w-5 h-5" />
+                    <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-2 border-t border-[#D4AF37]/20 font-sans text-sm sm:text-base text-[#E9DFC8]/90 leading-relaxed font-light animate-fade-in">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 border-t border-[#1C1C21] font-sans text-xs sm:text-sm text-[#F4EFE6]/90 leading-relaxed font-light animate-fade-in">
                     {faq.answer}
                   </div>
                 )}
@@ -101,15 +101,15 @@ export const FAQSection: React.FC = () => {
         </div>
 
         {/* Contact Assistance Footer */}
-        <div className="mt-12 text-center bg-[#12372A]/70 p-6 rounded-xl border border-[#D4AF37]/30 max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-10 text-center bg-[#121215] p-5 sm:p-6 rounded-xl border border-[#D4AF37]/30 max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-left">
-            <h4 className="font-serif font-bold text-lg text-[#F8F3E7]">Have another question?</h4>
-            <p className="text-xs text-[#E9DFC8]/80">Our hospitality team is happy to assist you directly.</p>
+            <h4 className="font-serif font-bold text-base text-[#FFFFFF]">Have another question?</h4>
+            <p className="text-xs text-[#F4EFE6]/80">Our hospitality team is happy to assist you directly.</p>
           </div>
           <div className="flex items-center space-x-3 shrink-0">
             <a
               href="tel:+918700087329"
-              className="px-4 py-2 bg.transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0B241B] rounded-md font-bold text-xs uppercase tracking-wider transition-all flex items-center"
+              className="px-4 py-2 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#050507] rounded-md font-bold text-xs uppercase tracking-wider transition-all flex items-center"
             >
               <Phone className="w-3.5 h-3.5 mr-1.5" />
               Call Us
@@ -118,7 +118,7 @@ export const FAQSection: React.FC = () => {
               href="https://wa.me/918700087329?text=Hello%20The%20Pavitra,%20I%20have%20a%20query%20regarding%20dining."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-md font-bold text-xs uppercase tracking-wider transition-all flex items-center shadow-lg"
+              className="px-4 py-2 bg-gradient-to-r from-[#D4AF37] to-[#E5C158] text-[#050507] rounded-md font-bold text-xs uppercase tracking-wider transition-all flex items-center shadow-lg"
             >
               <MessageSquare className="w-3.5 h-3.5 mr-1.5" />
               WhatsApp
