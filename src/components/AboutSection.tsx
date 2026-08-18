@@ -22,15 +22,15 @@ export const AboutSection: React.FC = () => {
           <div className="w-20 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full" />
         </div>
 
-        {/* 2-Column Photo Showcase */}
+        {/* 2-Column Photo & Highlights Showcase */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Left Column: High-Clarity Storefront Entrance Photo Showcase (Mobile & Desktop) */}
-          <div className="lg:col-span-6 relative">
+          {/* Left Column: High-Clarity Storefront Entrance Photo Showcase (Desktop View Showcase) */}
+          <div className="lg:col-span-6 relative hidden lg:block">
             
             {/* Storefront Main Image Container */}
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-2 border-[#D4AF37] bg-[#FFFFFF] p-1.5 group">
-              <div className="relative h-[320px] sm:h-[420px] rounded-xl overflow-hidden">
+              <div className="relative h-[360px] sm:h-[420px] rounded-xl overflow-hidden">
                 <img
                   src="/images/pavitra-entrance.png"
                   alt="The Pavitra Glowing Storefront Entrance"
@@ -49,7 +49,7 @@ export const AboutSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Overlapping Secondary Image: Unique Pink Dining Lounge (Desktop & Tablet) */}
+            {/* Overlapping Secondary Image: Unique Pink Dining Lounge */}
             <div className="absolute -bottom-6 -right-4 w-44 sm:w-60 rounded-xl overflow-hidden border-2 border-[#D4AF37] shadow-2xl hidden sm:block z-20 group bg-[#FFFFFF] p-1">
               <img
                 src="/images/pink-hall-wide.png"

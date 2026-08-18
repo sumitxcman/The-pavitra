@@ -45,25 +45,46 @@ export const Hero: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 text-center text-[#111113] w-full flex flex-col items-center">
         
         {/* Badges Bar */}
-        <div className="inline-flex items-center space-x-2 bg-[#FFFFFF]/95 border border-[#D4AF37] px-4 py-1.5 rounded-full mb-4 shadow-md backdrop-blur-md">
+        <div className="inline-flex items-center space-x-2 bg-[#FFFFFF]/95 border border-[#D4AF37] px-4 py-1.5 rounded-full mb-3 shadow-md backdrop-blur-md">
           <Shield className="w-3.5 h-3.5 text-[#B38F24]" />
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B38F24]">
             100% PURE VEGETARIAN
           </span>
         </div>
 
-        {/* Title */}
+        {/* 1. Main Title */}
         <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold tracking-tight text-[#111113] leading-[1.05] drop-shadow-sm">
           THE PAVITRA
         </h1>
         
-        {/* Caption */}
-        <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-[#27272A] font-serif italic max-w-xl mx-auto font-semibold">
+        {/* 2. MOBILE PHONE VIEW ONLY FEATURED STOREFRONT IMAGE CARD (BETWEEN TITLE & CAPTION) */}
+        <div className="w-full max-w-sm mx-auto my-4 sm:my-5 relative z-20 block lg:hidden">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#D4AF37] bg-[#FFFFFF] p-1.5">
+            <div className="relative h-60 sm:h-72 rounded-xl overflow-hidden">
+              <img
+                src="/images/pavitra-entrance.png"
+                alt="The Pavitra Gold Glowing Storefront Entrance"
+                className="w-full h-full object-cover filter contrast-[1.12] brightness-[1.04] saturate-[1.05]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#111113]/90 via-transparent to-transparent" />
+              
+              {/* Quote text overlay */}
+              <div className="absolute bottom-3 left-3 right-3 text-left">
+                <p className="font-serif italic text-xs sm:text-sm text-[#FFFFFF] drop-shadow-md font-medium">
+                  "Purity in every ingredient, perfection on every platter."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. Subheading Caption */}
+        <p className="text-xs sm:text-base md:text-lg text-[#27272A] font-serif italic max-w-xl mx-auto font-semibold">
           Metro Walk Mall, Rohini — Pure Flavours & Luxury Ambience
         </p>
 
-        {/* Action CTAs */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-5 w-full max-w-md mx-auto">
+        {/* 4. Action CTAs */}
+        <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-5 w-full max-w-md mx-auto">
           <button
             onClick={handleScrollToReserve}
             className="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#D4AF37] hover:brightness-105 text-[#FFFFFF] font-bold text-xs uppercase tracking-widest rounded-md transition-all shadow-xl flex items-center justify-center space-x-2 border border-[#FFFFFF]/40"
@@ -82,8 +103,8 @@ export const Hero: React.FC = () => {
           </button>
         </div>
 
-        {/* Rating Pill */}
-        <div className="mt-8 inline-flex items-center space-x-2.5 bg-[#FFFFFF]/95 border border-[#D4AF37] px-4 py-2 rounded-full backdrop-blur-md shadow-md">
+        {/* 5. Rating Pill */}
+        <div className="mt-7 inline-flex items-center space-x-2.5 bg-[#FFFFFF]/95 border border-[#D4AF37] px-4 py-2 rounded-full backdrop-blur-md shadow-md">
           <div className="flex text-[#D4AF37]">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-4 h-4 fill-[#D4AF37]" />
