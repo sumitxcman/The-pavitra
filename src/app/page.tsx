@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#FAF9F6] text-[#111113] relative">
+    <main className="min-h-screen bg-[#F8F4EC] text-[#111113] relative">
       
       {/* Sticky Header Navigation */}
       <Navbar onOpenReservation={handleScrollToReservation} />
