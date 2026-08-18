@@ -38,7 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
     setMobileMenuOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      const navHeight = 90;
+      const navHeight = 70;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: elementPosition - navHeight,
@@ -49,13 +49,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0B241B]/95 backdrop-blur-md border-b border-[#D4AF37]/30 shadow-2xl py-3.5'
-          : 'bg-gradient-to-b from-[#0B241B]/95 via-[#0B241B]/70 to-transparent py-6'
+          ? 'bg-[#0A0A0C]/95 backdrop-blur-md border-b border-[#D4AF37]/30 shadow-2xl py-2.5 sm:py-3.5'
+          : 'bg-gradient-to-b from-[#0A0A0C]/95 via-[#0A0A0C]/70 to-transparent py-3 sm:py-5'
       }`}
     >
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+      <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
         <div className="flex items-center justify-between">
           
           {/* Logo Branding */}
@@ -64,29 +64,29 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
             onClick={(e) => handleNavClick(e, '#hero')}
             className="flex flex-col group focus:outline-none shrink-0"
           >
-            <span className="font-serif text-2xl sm:text-3xl lg:text-3xl tracking-[0.2em] font-bold text-[#F8F3E7] group-hover:text-[#D4AF37] transition-colors duration-300">
+            <span className="font-serif text-xl sm:text-2xl lg:text-3xl tracking-[0.2em] font-bold text-[#FFFFFF] group-hover:text-[#D4AF37] transition-colors duration-300">
               THE PAVITRA
             </span>
-            <span className="text-[10px] sm:text-xs tracking-[0.3em] text-[#D4AF37] uppercase font-sans font-semibold mt-0.5">
+            <span className="text-[9px] sm:text-[10px] lg:text-xs tracking-[0.3em] text-[#D4AF37] uppercase font-sans font-semibold">
               PURE VEG RESTAURANT
             </span>
           </a>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center space-x-7 xl:space-x-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-xs xl:text-sm uppercase tracking-[0.15em] font-semibold text-[#E9DFC8] hover:text-[#D4AF37] transition-colors duration-200 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#D4AF37] hover:after:w-full after:transition-all after:duration-300"
+                className="text-xs xl:text-sm uppercase tracking-[0.15em] font-semibold text-[#F4EFE6]/90 hover:text-[#D4AF37] transition-colors duration-200 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#D4AF37] hover:after:w-full after:transition-all after:duration-300"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Desktop CTA Buttons */}
+          {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4 shrink-0">
             <a
               href="#reservations"
@@ -94,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
                 handleNavClick(e, '#reservations');
                 if (onOpenReservation) onOpenReservation();
               }}
-              className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-gradient-to-r from-[#D4AF37] via-[#E6C65c] to-[#D4AF37] text-[#0B241B] font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-xl hover:shadow-[#D4AF37]/40 hover:-translate-y-0.5 border border-[#F8F3E7]/40"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-md bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#D4AF37] text-[#0A0A0C] font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-xl hover:shadow-[#D4AF37]/30 hover:-translate-y-0.5 border border-[#FFFFFF]/30"
             >
               <Calendar className="w-4 h-4 mr-2" />
               Reserve a Table
@@ -102,53 +102,53 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
             <a
               href="#menu"
               onClick={(e) => handleNavClick(e, '#menu')}
-              className="inline-flex items-center justify-center px-5 py-3 rounded-md border border-[#D4AF37]/70 hover:border-[#D4AF37] bg-[#12372A]/70 hover:bg-[#12372A] text-[#F8F3E7] hover:text-[#D4AF37] font-bold text-xs uppercase tracking-widest transition-all duration-300 backdrop-blur-sm shadow-md"
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-md border border-[#D4AF37]/60 hover:border-[#D4AF37] bg-[#141417]/80 hover:bg-[#1C1C21] text-[#FFFFFF] hover:text-[#D4AF37] font-bold text-xs uppercase tracking-widest transition-all duration-300 backdrop-blur-sm shadow-md"
             >
               <ShoppingBag className="w-4 h-4 mr-2 text-[#D4AF37]" />
-              Order Online
+              Menu
             </a>
           </div>
 
-          {/* Mobile Hamburger Button */}
-          <div className="flex lg:hidden items-center space-x-3">
+          {/* Mobile Phone Compact Controls */}
+          <div className="flex lg:hidden items-center space-x-2">
             <a
               href="#reservations"
               onClick={(e) => handleNavClick(e, '#reservations')}
-              className="px-3 py-2 rounded-md bg-[#D4AF37] text-[#0B241B] font-bold text-[10px] uppercase tracking-wider flex items-center shadow-md"
+              className="px-3 py-1.5 rounded-md bg-gradient-to-r from-[#D4AF37] to-[#E5C158] text-[#0A0A0C] font-bold text-[10px] uppercase tracking-wider flex items-center shadow-md shrink-0"
             >
-              <Calendar className="w-3.5 h-3.5 mr-1" />
+              <Calendar className="w-3 h-3 mr-1" />
               Reserve
             </a>
             <a
               href="tel:+918700087329"
-              className="p-2 rounded-md border border-[#D4AF37]/60 text-[#D4AF37] bg-[#12372A]"
+              className="p-1.5 rounded-md border border-[#D4AF37]/50 text-[#D4AF37] bg-[#141417] shrink-0"
               title="Call The Pavitra"
             >
               <Phone className="w-4 h-4" />
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-[#F8F3E7] hover:text-[#D4AF37] focus:outline-none"
+              className="p-1.5 rounded-md text-[#FFFFFF] hover:text-[#D4AF37] focus:outline-none shrink-0"
               aria-label="Toggle Navigation Menu"
             >
-              {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 
         </div>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Phone Full Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[70px] bg-[#0B241B]/98 backdrop-blur-xl border-b border-[#D4AF37]/40 shadow-2xl animate-fade-in">
-          <div className="px-6 pt-4 pb-8 space-y-4">
-            <div className="flex flex-col space-y-2">
+        <div className="lg:hidden fixed inset-x-0 top-[56px] sm:top-[64px] bg-[#0A0A0C]/98 backdrop-blur-xl border-b border-[#D4AF37]/40 shadow-2xl animate-fade-in z-50 max-h-[calc(100vh-60px)] overflow-y-auto">
+          <div className="px-5 pt-3 pb-6 space-y-3">
+            <div className="flex flex-col space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-sm uppercase tracking-widest text-[#F8F3E7] hover:text-[#D4AF37] font-semibold py-2.5 border-b border-[#12372A]/80 flex items-center justify-between"
+                  className="text-xs uppercase tracking-widest text-[#FFFFFF] hover:text-[#D4AF37] font-semibold py-2 border-b border-[#141417] flex items-center justify-between"
                 >
                   <span>{link.name}</span>
                   <span className="text-[#D4AF37]/60 text-xs">→</span>
@@ -156,21 +156,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation }) => {
               ))}
             </div>
 
-            <div className="pt-4 flex flex-col space-y-3">
+            <div className="pt-3 flex flex-col space-y-2.5">
               <a
                 href="#reservations"
                 onClick={(e) => {
                   handleNavClick(e, '#reservations');
                   if (onOpenReservation) onOpenReservation();
                 }}
-                className="w-full text-center py-3.5 bg-gradient-to-r from-[#D4AF37] via-[#E6C65c] to-[#D4AF37] text-[#0B241B] font-bold text-xs uppercase tracking-widest rounded-md shadow-xl flex items-center justify-center space-x-2"
+                className="w-full text-center py-3 bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#D4AF37] text-[#0A0A0C] font-bold text-xs uppercase tracking-widest rounded-md shadow-xl flex items-center justify-center space-x-2"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Reserve a Table Now</span>
               </a>
               <a
                 href="tel:+918700087329"
-                className="w-full text-center py-3 border border-[#D4AF37]/70 text-[#D4AF37] bg-[#12372A] font-bold text-xs uppercase tracking-widest rounded-md flex items-center justify-center space-x-2"
+                className="w-full text-center py-2.5 border border-[#D4AF37]/60 text-[#D4AF37] bg-[#141417] font-bold text-xs uppercase tracking-widest rounded-md flex items-center justify-center space-x-2"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call 087000 87329</span>

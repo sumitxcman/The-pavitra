@@ -7,27 +7,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        forest: {
-          DEFAULT: "#12372A",
-          dark: "#0B241B",
-          light: "#1e523f",
+        onyx: {
+          DEFAULT: "#0A0A0C",
+          dark: "#050507",
+          light: "#121215",
         },
-        emerald: {
-          dark: "#0B241B",
-        },
-        cream: {
-          DEFAULT: "#F8F3E7",
-          light: "#FCFAF4",
+        obsidian: {
+          DEFAULT: "#141417",
+          card: "#1C1C21",
+          border: "#2A2A32",
         },
         gold: {
           DEFAULT: "#D4AF37",
-          light: "#E6C65c",
+          light: "#E5C158",
           dark: "#B38F24",
           accent: "#F4D068",
         },
-        beige: {
-          DEFAULT: "#E9DFC8",
-          light: "#F3EDE0",
+        cream: {
+          DEFAULT: "#F4EFE6",
+          light: "#FAF7F2",
         },
       },
       fontFamily: {
@@ -45,16 +43,17 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         goldPulse: {
-          '0%, 100%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.4)' },
-          '50%': { boxShadow: '0 0 0 12px rgba(212, 175, 55, 0)' },
+          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+          '50%': { opacity: '0.85', transform: 'scale(1.03)' },
         },
       },
     },
   },
   plugins: [],
 };
+
 export default config;
