@@ -44,8 +44,8 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 text-center text-[#FFFFFF] w-full flex flex-col items-center">
         
-        {/* TOP MOBILE & DESKTOP FEATURED PHOTO COLLAGE CARD */}
-        <div className="w-full max-w-xl mx-auto mb-6 sm:mb-8 relative z-20">
+        {/* TOP MOBILE FEATURED PHOTO COLLAGE CARD (MOBILE PHONE VIEW ONLY) */}
+        <div className="w-full max-w-xl mx-auto mb-6 sm:mb-8 relative z-20 block lg:hidden">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#D4AF37] bg-[#121215] p-1">
             
             {/* Storefront Entrance Main Image */}
