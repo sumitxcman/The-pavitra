@@ -80,9 +80,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'gal-12',
-    title: 'Storefront Entrance & Waiting Lounge',
+    title: 'Chandelier Main Dining Hall Ambience',
     category: 'Ambience',
-    imageUrl: '/images/pavitra-wide-entrance.png',
+    imageUrl: '/images/pavitra-main-hall.png',
     aspectRatio: 'wide',
   },
   {
@@ -108,7 +108,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'gal-16',
-    title: 'Pink Ambience Lounge & Seating',
+    title: 'Pink Ambience Luxury Dining Lounge',
     category: 'Dining',
     imageUrl: '/images/pink-hall-wide.png',
     aspectRatio: 'wide',
@@ -136,15 +136,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'gal-20',
-    title: 'Fresh Hot Served Noodles & Manchurian Bowls',
+    title: 'Luxury Family Dining Table Setup',
     category: 'Dining',
-    imageUrl: '/images/server-bowls.png',
+    imageUrl: '/images/intimate-tables.png',
     aspectRatio: 'square',
   },
   {
     id: 'gal-21',
-    title: 'Special Event & Party Hall Setup',
-    category: 'Events',
+    title: 'Special Festive Party Hall & Lighting',
+    category: 'Special Occasions',
     imageUrl: '/images/pavitra-party-hall.png',
     aspectRatio: 'wide',
   },
@@ -157,9 +157,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'gal-23',
-    title: 'Mixed Kabab & Mushroom Starter Platter',
+    title: 'Tandoori Starter Platter Highlight',
     category: 'Food',
-    imageUrl: '/images/mixed-kabab-platter.png',
+    imageUrl: '/images/tandoori-platter.png',
     aspectRatio: 'tall',
   },
   {
