@@ -71,7 +71,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Starters',
     price: 290,
     description: 'Pan-fried patties made of spinach, green peas, potatoes and aromatic spices with cashew topping.',
-    image: '/images/mixed-kabab-platter.png',
+    image: '/images/tandoori-starters-oval.png',
     isVegetarian: true,
     isPopular: true,
     spicyLevel: 1,
