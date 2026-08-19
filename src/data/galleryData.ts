@@ -19,7 +19,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-3',
     title: 'Pink Marble Dining Hall & Chandeliers',
     category: 'Ambience',
-    imageUrl: '/images/luxury_main_hall.jpg',
+    imageUrl: '/images/pink-hall-wide.png',
     aspectRatio: 'wide',
   },
   {
@@ -47,7 +47,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-7',
     title: 'Birthday Celebration Party Setup at The Pavitra',
     category: 'Special Occasions',
-    imageUrl: '/images/luxury_banquet.jpg',
+    imageUrl: '/images/birthday-party-setup.png',
     aspectRatio: 'wide',
   },
   {
@@ -110,7 +110,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-16',
     title: 'Pink Ambience Luxury Dining Lounge',
     category: 'Dining',
-    imageUrl: '/images/luxury_main_hall.jpg',
+    imageUrl: '/images/cultural-art-hall.png',
     aspectRatio: 'wide',
   },
   {
@@ -131,7 +131,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-19',
     title: 'Intimate Dining Tables & Chandelier Lighting',
     category: 'Ambience',
-    imageUrl: '/images/luxury_dining.jpg',
+    imageUrl: '/images/intimate-tables.png',
     aspectRatio: 'wide',
   },
   {
