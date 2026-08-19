@@ -179,6 +179,30 @@ export const MENU_ITEMS: MenuItem[] = [
     spicyLevel: 1,
   },
 
+  // --- SOUTH INDIAN ---
+  {
+    id: 'south-1',
+    name: 'Crispy Masala Dosa',
+    category: 'South Indian',
+    price: 210,
+    description: 'Golden crisp fermented rice crepe stuffed with tempered spiced potato mash, served with sambar & chutneys.',
+    image: '/images/mix-veg-dal-combo.png',
+    isVegetarian: true,
+    isPopular: true,
+    spicyLevel: 1,
+  },
+  {
+    id: 'south-2',
+    name: 'Paneer Butter Masala Dosa',
+    category: 'South Indian',
+    price: 260,
+    description: 'Crisp dosa generously filled with rich cottage cheese stuffing and butter, served with chutney trio.',
+    image: '/images/north-indian-feast.png',
+    isVegetarian: true,
+    isChefSpecial: true,
+    spicyLevel: 1,
+  },
+
   // --- PIZZA ---
   {
     id: 'pizza-1',
@@ -191,6 +215,17 @@ export const MENU_ITEMS: MenuItem[] = [
     isChefSpecial: true,
     isPopular: true,
     spicyLevel: 0,
+  },
+  {
+    id: 'pizza-2',
+    name: 'Pavitra Special Veggie Delight Pizza',
+    category: 'Pizza',
+    price: 380,
+    description: 'Loaded pizza with bell peppers, paneer cubes, olives, jalapenos, sweet corn and liquid cheese blend.',
+    image: '/images/corn-cheese-pizza.png',
+    isVegetarian: true,
+    isPopular: true,
+    spicyLevel: 1,
   },
 
   // --- BREADS ---
@@ -294,6 +329,28 @@ export const MENU_ITEMS: MenuItem[] = [
     image: '/images/deluxe-thali-combo.png',
     isVegetarian: true,
     spicyLevel: 1,
+  },
+
+  // --- DESSERTS ---
+  {
+    id: 'dessert-1',
+    name: 'Hot Gulab Jamun with Rabri',
+    category: 'Desserts',
+    price: 160,
+    description: 'Warm khoya fried dumplings served over chilled thickened cardamom infused rabri.',
+    image: '/images/royal-thali-feast.png',
+    isVegetarian: true,
+    isPopular: true,
+  },
+  {
+    id: 'dessert-2',
+    name: 'Kesari Rasmalai',
+    category: 'Desserts',
+    price: 180,
+    description: 'Soft cottage cheese discs soaked in saffron, milk and crushed pistachio nuts.',
+    image: '/images/sunset-mocktails.png',
+    isVegetarian: true,
+    isChefSpecial: true,
   },
 
   // --- BEVERAGES ---
