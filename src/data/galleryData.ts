@@ -110,7 +110,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-16',
     title: 'Pink Ambience Lounge & Seating',
     category: 'Dining',
-    imageUrl: '/images/pavitra-pink-hall.png',
+    imageUrl: '/images/pink-hall-wide.png',
     aspectRatio: 'wide',
   },
   {

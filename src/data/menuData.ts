@@ -140,7 +140,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'North Indian',
     price: 360,
     description: 'Soft cottage cheese & khoya dumpling dumplings served in a rich cashew nut sauce.',
-    image: '/images/mix-veg-dal-combo.png',
+    image: '/images/server-bowls.png',
     isVegetarian: true,
     isChefSpecial: true,
     spicyLevel: 1,
