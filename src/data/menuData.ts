@@ -47,7 +47,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Starters',
     price: 310,
     description: 'Juicy Soya Chaap marinated in tandoori spices and roasted to golden perfection.',
-    image: '/images/tandoori-starters-oval.png',
+    image: '/images/tandoori-soya-chaap-new.png',
     isVegetarian: true,
     isChefSpecial: true,
     isPopular: true,
