@@ -65,41 +65,8 @@ export const MENU_ITEMS: MenuItem[] = [
     isPopular: true,
     spicyLevel: 2,
   },
-  {
-    id: 'starter-5',
-    name: 'Hara Bhara & Mixed Kabab Platter',
-    category: 'Starters',
-    price: 290,
-    description: 'Pan-fried patties made of spinach, green peas, potatoes and aromatic spices with cashew topping.',
-    image: '/images/tandoori-starters-oval.png',
-    isVegetarian: true,
-    isPopular: true,
-    spicyLevel: 1,
-  },
 
   // --- PANEER SPECIALITIES ---
-  {
-    id: 'paneer-1',
-    name: 'Paneer Butter Masala',
-    category: 'Paneer Specialities',
-    price: 360,
-    description: 'Tender cottage cheese cubes simmered in a creamy, velvety tomato and butter gravy.',
-    image: '/images/north-indian-feast.png',
-    isVegetarian: true,
-    isChefSpecial: true,
-    isPopular: true,
-    spicyLevel: 1,
-  },
-  {
-    id: 'paneer-2',
-    name: 'Kadhai Paneer',
-    category: 'Paneer Specialities',
-    price: 350,
-    description: 'Cottage cheese tossed with crunchy bell peppers, onions and roasted coriander in rich kadhai spices.',
-    image: '/images/deluxe-thali-combo.png',
-    isVegetarian: true,
-    spicyLevel: 2,
-  },
   {
     id: 'paneer-3',
     name: 'Shahi Paneer',
@@ -110,16 +77,6 @@ export const MENU_ITEMS: MenuItem[] = [
     isVegetarian: true,
     isChefSpecial: true,
     spicyLevel: 1,
-  },
-  {
-    id: 'paneer-4',
-    name: 'Paneer Lababdar',
-    category: 'Paneer Specialities',
-    price: 370,
-    description: 'Rich royal cottage cheese delicacy cooked in onion-tomato gravy with grated paneer finish.',
-    image: '/images/mix-veg-dal-combo.png',
-    isVegetarian: true,
-    spicyLevel: 2,
   },
 
   // --- NORTH INDIAN ---
@@ -133,17 +90,6 @@ export const MENU_ITEMS: MenuItem[] = [
     isVegetarian: true,
     isPopular: true,
     spicyLevel: 2,
-  },
-  {
-    id: 'north-2',
-    name: 'Malai Kofta Special',
-    category: 'North Indian',
-    price: 360,
-    description: 'Soft cottage cheese & khoya dumpling dumplings served in a rich cashew nut sauce.',
-    image: '/images/server-bowls.png',
-    isVegetarian: true,
-    isChefSpecial: true,
-    spicyLevel: 1,
   },
 
   // --- CHINESE ---
@@ -168,16 +114,6 @@ export const MENU_ITEMS: MenuItem[] = [
     isVegetarian: true,
     spicyLevel: 2,
   },
-  {
-    id: 'chinese-3',
-    name: 'Crispy Veg Spring Rolls & Chaap',
-    category: 'Chinese',
-    price: 260,
-    description: 'Wok-fried crispy rolls loaded with julienned vegetables and mild Chinese spices.',
-    image: '/images/spring-rolls-malai-chaap.png',
-    isVegetarian: true,
-    spicyLevel: 1,
-  },
 
   // --- SOUTH INDIAN ---
   {
@@ -189,17 +125,6 @@ export const MENU_ITEMS: MenuItem[] = [
     image: '/images/luxury_dosa.jpg',
     isVegetarian: true,
     isPopular: true,
-    spicyLevel: 1,
-  },
-  {
-    id: 'south-2',
-    name: 'Paneer Butter Masala Dosa',
-    category: 'South Indian',
-    price: 260,
-    description: 'Crisp dosa generously filled with rich cottage cheese stuffing and butter, served with chutney trio.',
-    image: '/images/north-indian-feast.png',
-    isVegetarian: true,
-    isChefSpecial: true,
     spicyLevel: 1,
   },
 
@@ -239,26 +164,6 @@ export const MENU_ITEMS: MenuItem[] = [
     isVegetarian: true,
     isPopular: true,
   },
-  {
-    id: 'bread-2',
-    name: 'Missi Roti',
-    category: 'Breads',
-    price: 89,
-    description: 'Traditional gram flour (besan) and wheat flatbread spiced with onion, carom seeds and fresh coriander.',
-    image: '/images/deluxe-thali-combo.png',
-    isVegetarian: true,
-    isChefSpecial: true,
-  },
-  {
-    id: 'bread-3',
-    name: 'Garlic Butter Naan',
-    category: 'Breads',
-    price: 95,
-    description: 'Tandoori naan topped with roasted minced garlic and parsley, slathered in butter.',
-    image: '/images/north-indian-feast.png',
-    isVegetarian: true,
-    isPopular: true,
-  },
 
   // --- RICE ---
   {
@@ -272,15 +177,6 @@ export const MENU_ITEMS: MenuItem[] = [
     isChefSpecial: true,
     isPopular: true,
     spicyLevel: 2,
-  },
-  {
-    id: 'rice-2',
-    name: 'Steamed Basmati & Jeera Rice',
-    category: 'Rice',
-    price: 180,
-    description: 'Aromatic long-grain basmati rice tempered with ghee and whole cumin seeds.',
-    image: '/images/mix-veg-dal-combo.png',
-    isVegetarian: true,
   },
 
   // --- DAL & CURRIES ---
@@ -332,26 +228,6 @@ export const MENU_ITEMS: MenuItem[] = [
   },
 
   // --- DESSERTS ---
-  {
-    id: 'dessert-1',
-    name: 'Hot Gulab Jamun with Rabri',
-    category: 'Desserts',
-    price: 160,
-    description: 'Warm khoya fried dumplings served over chilled thickened cardamom infused rabri.',
-    image: '/images/sunset-mocktails.png',
-    isVegetarian: true,
-    isPopular: true,
-  },
-  {
-    id: 'dessert-2',
-    name: 'Kesari Rasmalai',
-    category: 'Desserts',
-    price: 180,
-    description: 'Soft cottage cheese discs soaked in saffron, milk and crushed pistachio nuts.',
-    image: '/images/sunset-mocktails.png',
-    isVegetarian: true,
-    isChefSpecial: true,
-  },
 
   // --- BEVERAGES ---
   {
