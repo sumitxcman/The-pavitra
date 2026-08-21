@@ -59,7 +59,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Starters',
     price: 280,
     description: 'Crispy outer crusted dumplings stuffed with spiced cottage cheese and minced veggies, served with garlic dip.',
-    image: '/images/spring-rolls-malai-chaap.png',
+    image: '/images/kurkure-momos-new.png',
     isVegetarian: true,
     isChefSpecial: true,
     isPopular: true,
