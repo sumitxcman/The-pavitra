@@ -68,6 +68,28 @@ export const MENU_ITEMS: MenuItem[] = [
 
   // --- PANEER SPECIALITIES ---
   {
+    id: 'paneer-1',
+    name: 'Paneer Butter Masala',
+    category: 'Paneer Specialities',
+    price: 340,
+    description: 'Soft paneer cubes simmered in a rich, creamy, and mildly sweet tomato-cashew gravy.',
+    image: '/images/luxury_paneer_butter_masala.jpg',
+    isVegetarian: true,
+    isPopular: true,
+    spicyLevel: 1,
+  },
+  {
+    id: 'paneer-2',
+    name: 'Kadhai Paneer',
+    category: 'Paneer Specialities',
+    price: 330,
+    description: 'Cottage cheese cooked with bell peppers, onions, and freshly ground spices in a traditional kadhai.',
+    image: '/images/luxury_kadhai_paneer.jpg',
+    isVegetarian: true,
+    isChefSpecial: true,
+    spicyLevel: 2,
+  },
+  {
     id: 'paneer-3',
     name: 'Shahi Paneer',
     category: 'Paneer Specialities',
