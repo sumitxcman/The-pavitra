@@ -228,6 +228,16 @@ export const MENU_ITEMS: MenuItem[] = [
   },
 
   // --- DESSERTS ---
+  {
+    id: 'dessert-1',
+    name: 'Chocolate Brownie with Ice Cream',
+    category: 'Desserts',
+    price: 180,
+    description: 'Warm, fudgy chocolate brownie topped with vanilla ice cream and rich chocolate syrup.',
+    image: '/images/sizzling-brownie.png',
+    isVegetarian: true,
+    isPopular: true,
+  },
 
   // --- BEVERAGES ---
   {
