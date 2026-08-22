@@ -313,7 +313,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Breads',
     price: 200,
     description: 'Assortment of perfectly baked whole wheat flatbreads with charred tandoor spots.',
-    image: '/images/tandoori-breads-basket.png',
+    image: '/images/tandoori-roti-new.png',
     isVegetarian: true,
   },
   {
@@ -322,7 +322,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Breads',
     price: 130,
     description: 'Golden-yellow spiced gram flour flatbreads brushed with premium butter.',
-    image: '/images/tandoori-platter.png',
+    image: '/images/missi-roti-new.png',
     isVegetarian: true,
   },
   {
@@ -331,7 +331,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Breads',
     price: 90,
     description: 'Flaky, multi-layered flatbread with visible crispy layers, brushed with ghee.',
-    image: '/images/luxury_thali.jpg',
+    image: '/images/lachha-paratha-new.png',
     isVegetarian: true,
   },
   {
@@ -340,7 +340,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Breads',
     price: 85,
     description: 'Soft tandoori baked refined flour bread brushed with molten butter.',
-    image: '/images/breads-new.png',
+    image: '/images/hot-butter-naan-new.png',
     isVegetarian: true,
     isPopular: true,
   },
