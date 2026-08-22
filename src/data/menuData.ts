@@ -160,7 +160,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'Breads',
     price: 85,
     description: 'Soft tandoori baked refined flour bread brushed with molten butter.',
-    image: '/images/tandoori-breads-basket.png',
+    image: '/images/breads-new.png',
     isVegetarian: true,
     isPopular: true,
   },
