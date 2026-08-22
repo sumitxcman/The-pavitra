@@ -94,6 +94,17 @@ export const MENU_ITEMS: MenuItem[] = [
 
   // --- CHINESE ---
   {
+    id: 'chinese-4',
+    name: 'Luxury Hakka Noodles',
+    category: 'Chinese',
+    price: 320,
+    description: 'Premium wok-tossed Hakka noodles with fresh exotic vegetables and spring onions.',
+    image: '/images/luxury_chinese_noodles.jpg',
+    isVegetarian: true,
+    isPopular: true,
+    spicyLevel: 1,
+  },
+  {
     id: 'chinese-1',
     name: 'Honey Chilli Potato',
     category: 'Chinese',
@@ -116,6 +127,16 @@ export const MENU_ITEMS: MenuItem[] = [
   },
 
   // --- SOUTH INDIAN ---
+  {
+    id: 'south-3',
+    name: 'Premium Idli Vada Platter',
+    category: 'South Indian',
+    price: 260,
+    description: 'Fluffy idlis and crispy medu vada served on a banana leaf with coconut chutney and sambar.',
+    image: '/images/luxury_south_indian.jpg',
+    isVegetarian: true,
+    isPopular: true,
+  },
   {
     id: 'south-1',
     name: 'Crispy Masala Dosa',
@@ -166,6 +187,16 @@ export const MENU_ITEMS: MenuItem[] = [
   },
 
   // --- RICE ---
+  {
+    id: 'rice-3',
+    name: 'Royal Subz Biryani',
+    category: 'Rice',
+    price: 350,
+    description: 'Luxurious vegetable biryani slow-cooked in a brass handi with rich saffron and mint.',
+    image: '/images/luxury_rice_biryani.jpg',
+    isVegetarian: true,
+    isChefSpecial: true,
+  },
   {
     id: 'rice-1',
     name: 'Special Veg Dum Biryani',
@@ -229,6 +260,16 @@ export const MENU_ITEMS: MenuItem[] = [
 
   // --- DESSERTS ---
   {
+    id: 'dessert-2',
+    name: 'Golden Saffron Gulab Jamun',
+    category: 'Desserts',
+    price: 210,
+    description: 'Premium soft dumplings soaked in saffron syrup, garnished with silver varq and pistachios.',
+    image: '/images/luxury_dessert_jamun.jpg',
+    isVegetarian: true,
+    isChefSpecial: true,
+  },
+  {
     id: 'dessert-1',
     name: 'Chocolate Brownie with Ice Cream',
     category: 'Desserts',
@@ -240,6 +281,16 @@ export const MENU_ITEMS: MenuItem[] = [
   },
 
   // --- BEVERAGES ---
+  {
+    id: 'bev-4',
+    name: 'Watermelon Mint Mojito',
+    category: 'Beverages',
+    price: 190,
+    description: 'Refreshing luxury mocktail with fresh watermelon, crushed mint, lime, and sparkling soda.',
+    image: '/images/luxury_beverage_mojito.jpg',
+    isVegetarian: true,
+    isPopular: true,
+  },
   {
     id: 'bev-1',
     name: 'Pavitra Sunset Special Mocktail',
